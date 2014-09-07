@@ -1,15 +1,29 @@
-<html>
+<html ng-app="MainApp">
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+
   <title>Demo Page</title>
   <link type="text/css" rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.css" />
   <link type="text/css" rel="stylesheet" href="/vendor/bootstrap/css/bootstrap-theme.css" />
+  <link type="text/css" rel="stylesheet" href="/assets/css/app.css" />
 </head>
-<body>
+<body ng-controller="AppController">
+
+  <div ng-view></div>
 
 
-<script src="/vendor/jquery/jquery.js"></script>
-<script src="/vendor/bootstrap/js/bootstrap.js"></script>
-<script src="/vendor/angular.js"></script>
+  <script src="/vendor/jquery/jquery.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.js"></script>
+  <script src="/vendor/angular.js"></script>
+  <script src="/vendor/angular-route.js"></script>
+  <script src="/app.module.js"></script>
+  <script src="/modules/main/index.js"></script>
+  <script src="/modules/navigation/top.js"></script>
+  <script src="/modules/navigation/right.js"></script>
+  <script src="/modules/contact/index.js"></script>
 
 </body>
 </html>
