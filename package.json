@@ -1,0 +1,23 @@
+{
+  "name": "enterprise-angular-directives-demo",
+  "version": "1.0.0",
+  "description": "Demo project for Enterprise Developers guild presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "server": "./node_modules/.bin/serv ./app/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/james-huston/enterprise-angular-directives-demo.git"
+  },
+  "author": "James Huston <jhuston@redventures.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/james-huston/enterprise-angular-directives-demo/issues"
+  },
+  "homepage": "https://github.com/james-huston/enterprise-angular-directives-demo",
+  "devDependencies": {
+    "serv": "0.0.7"
+  }
+}

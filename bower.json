@@ -1,0 +1,22 @@
+{
+  "name": "enterprise-angular-directives-demo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/james-huston/enterprise-angular-directives-demo",
+  "authors": [
+    "James Huston <jhuston@redventures.com>"
+  ],
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularjs": "~1.2.23",
+    "bootstrap": "~3.2.0"
+  }
+}
