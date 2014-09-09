@@ -6,6 +6,12 @@ angular.module('MainApp')
     return {
       restrict: 'E',
 
+      transclude: true,
+
+      scope: {
+        myContact: '=contact'
+      },
+
       templateUrl: 'modules/contact/index.tpl.html',
 
       controller: function () {

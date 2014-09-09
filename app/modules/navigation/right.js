@@ -9,6 +9,11 @@ angular.module('MainApp')
 
       controller: function ($scope) {
         console.log('right nav controller', $scope.showRightPanel);
+
+        $scope.mySpecialContact = {
+          firstName: 'Barnie',
+          lastName: 'Rubble'
+        };
       },
 
       link: function () {
