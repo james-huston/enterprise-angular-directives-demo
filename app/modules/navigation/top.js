@@ -7,11 +7,15 @@ angular.module('MainApp')
 
       templateUrl: '/modules/navigation/top.tpl.html',
 
-      controller: function ($scope) {
+      scope: true,
+
+      controller: function ($scope, contactService, appState) {
         // simple function to toggle our right panel for us.
         $scope.toggleRightPanel = function () {
-          $scope.showRightPanel = !$scope.showRightPanel;
+          appState.showRightPanel = !appState.showRightPanel;
         };
+
+        $scope.contactService = contactService;
       },
 
       link: function () {

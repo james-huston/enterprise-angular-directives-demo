@@ -9,16 +9,15 @@
         });
     })
 
-    .controller('AppController',
-      function ($scope) {
+    .controller(
+      'AppController',
+      function ($scope, contactService) {
         console.log('app controller');
 
-        $scope.contact = {
+        contactService.set({
           firstName: 'Fred',
           lastName: 'Flintstone'
-        };
-
-        $scope.showRightPanel = false;
+        });
       });
 
 })(window.angular);

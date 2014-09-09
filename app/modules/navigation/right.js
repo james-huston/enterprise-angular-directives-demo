@@ -1,19 +1,19 @@
 (function (angular, undefined) {
 
 angular.module('MainApp')
-  .directive('apRightNavigation', function () {
+  .directive('apRightNavigation', function (contactService) {
     return {
       restrict: 'E',
 
       templateUrl: '/modules/navigation/right.tpl.html',
 
-      controller: function ($scope) {
+      scope: true,
+
+      controller: function ($scope, appState) {
         console.log('right nav controller', $scope.showRightPanel);
 
-        $scope.mySpecialContact = {
-          firstName: 'Barnie',
-          lastName: 'Rubble'
-        };
+        $scope.contactService = contactService;
+        $scope.appState = appState;
       },
 
       link: function () {
